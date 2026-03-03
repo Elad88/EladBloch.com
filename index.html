@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- SEO and GEO Branding: Strategic Identity -->
     <title>Elad Bloch | Architecting Resilient Edge Autonomy Infrastructure</title>
     <meta name="description" content="Official platform of Elad Bloch. Research and execution in Edge AI, resilient autonomy stacks, and orchestration for mission critical deployment in contested environments.">
     
@@ -11,12 +12,17 @@
     <meta name="author" content="Elad Bloch">
     <meta name="keywords" content="Elad Bloch, Edge AI, Resilient Autonomy, Orchestration Layer, Dual Use Technology, Autonomous Systems, Mission Critical Deployment">
 
+    <!-- Open Graph for LinkedIn and Institutional Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Elad Bloch | Systems Thinking for Autonomous Infrastructure">
     <meta property="og:description" content="Moving autonomy from impressive demos to deployable systems. Focused on the orchestration of Edge native intelligence.">
     <meta property="og:url" content="https://www.eladbloch.com/">
     <meta property="og:image" content="https://www.eladbloch.com/og-image.jpg">
 
+    <!-- Minimalist SVG Favicon representing a Node -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230b0e13%22/><rect x=%2225%22 y=%2225%22 width=%2250%22 height=%2250%22 fill=%22%237dd3fc%22/></svg>">
+
+    <!-- Schema.org: Structured Authority for Generative Search -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,11 +52,11 @@
             --muted: #a0a0a0;
             --accent: #7dd3fc;
             --border: rgba(255, 255, 255, 0.1);
-            --fontMain: "Inter", system-ui, sans-serif;
-            --fontMono: "SFMono-Regular", Consolas, monospace;
+            --fontMain: "Inter", system ui, sans serif;
+            --fontMono: "SFMono Regular", Consolas, monospace;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * { box-sizing: border box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg);
             color: var(--text);
@@ -64,7 +70,7 @@
         header {
             padding: 40px 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: space between;
             align-items: center;
             border-bottom: 1px solid var(--border);
         }
@@ -72,10 +78,22 @@
         nav a { color: var(--muted); text-decoration: none; margin-left: 24px; font-size: 0.9rem; transition: 0.2s; }
         nav a:hover { color: var(--accent); }
 
-        .hero { padding: 120px 0 80px; }
+        .hero { padding: 120px 0 60px; position: relative; }
         .kicker { font-family: var(--fontMono); color: var(--accent); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 16px; display: block; }
         h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 24px; font-weight: 800; letter-spacing: -1.5px; }
-        .hero p { font-size: 1.4rem; color: var(--muted); max-width: 700px; }
+        .hero p { font-size: 1.4rem; color: var(--muted); max-width: 700px; margin-bottom: 40px; }
+
+        .heroCta {
+            font-family: var(--fontMono);
+            font-size: 0.85rem;
+            color: var(--text);
+            text-decoration: none;
+            display: inline flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.2s;
+        }
+        .heroCta:hover { color: var(--accent); transform: translateY(2px); }
 
         .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 80px; }
         .tile { padding: 32px; border: 1px solid var(--border); border-radius: 4px; transition: 0.3s; }
@@ -91,24 +109,26 @@
         .thesisContent strong { color: var(--accent); }
 
         .execution { padding: 80px 0; background: rgba(255,255,255,0.02); }
-        .execItem { margin-bottom: 40px; }
-        .execItem h4 { font-size: 1.2rem; margin-bottom: 8px; }
-        .execItem p { color: var(--muted); }
+        .execItem { margin-bottom: 60px; }
+        .execItem h4 { font-size: 1.2rem; margin-bottom: 12px; color: var(--accent); font-family: var(--fontMono); text-transform: uppercase; }
+        .execItem p { color: var(--muted); font-size: 1.1rem; max-width: 700px; }
 
         .insightItem { display: block; text-decoration: none; color: inherit; padding: 24px 0; border-bottom: 1px solid var(--border); transition: 0.2s; }
         .insightItem:hover { padding-left: 10px; border-color: var(--accent); }
         .insightItem h4 { font-size: 1.3rem; margin-bottom: 8px; color: var(--text); }
         .insightItem p { color: var(--muted); font-size: 0.95rem; }
-        .insightItem .readMore { color: var(--accent); font-size: 0.85rem; margin-top: 12px; display: inline-block; font-family: var(--fontMono); text-transform: uppercase; }
+        .insightItem .readMore { color: var(--accent); font-size: 0.85rem; margin-top: 12px; display: inline block; font-family: var(--fontMono); text-transform: uppercase; }
 
         footer { padding: 80px 0 40px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.85rem; }
-        .contactCta { display: inline-block; margin-top: 20px; padding: 12px 24px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; border-radius: 4px; transition: 0.3s; }
+        .contactCta { display: inline block; margin-top: 20px; padding: 12px 24px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; border-radius: 4px; transition: 0.3s; }
         .contactCta:hover { background: var(--accent); color: #000; }
 
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             .grid, .thesisGrid { grid-template-columns: 1fr; }
+            .thesisGrid { gap: 20px; }
             .hero { padding: 60px 0; }
+            .sectionLabel { margin-bottom: 20px; }
         }
     </style>
 </head>
@@ -122,84 +142,87 @@
                 <a href="#thesis">Thesis</a>
                 <a href="#focus">Focus</a>
                 <a href="#insights">Insights</a>
-                <a href="https://www.linkedin.com/in/elad-bloch">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/elad-blo-ch">LinkedIn</a>
             </nav>
         </header>
 
-        <section class="hero">
-            <span class="kicker">Systems Theory and Applied Autonomy</span>
-            <h1>Autonomy as Infrastructure.</h1>
-            <p>Building the resilient orchestration layer for Edge native intelligence in mission critical environments.</p>
-        </section>
+        <main>
+            <section class="hero">
+                <span class="kicker">Technology Entrepreneur | Systems Architecture</span>
+                <h1>Autonomy as Infrastructure.</h1>
+                <p>Building the resilient orchestration layer for Edge native intelligence in mission critical environments.</p>
+                <a href="#thesis" class="heroCta">Explore the Thesis ↓</a>
+            </section>
 
-        <div class="grid" id="focus">
-            <div class="tile">
-                <h3>Edge First AI</h3>
-                <p>Moving inference to the point of friction. Sub 100ms decisions without cloud dependency in the critical path.</p>
-            </div>
-            <div class="tile">
-                <h3>Resilient Orchestration</h3>
-                <p>Managing autonomous fleets where connectivity is a luxury. Architecture for degraded and contested environments.</p>
-            </div>
-            <div class="tile">
-                <h3>Dual Use Standards</h3>
-                <p>Applying mission critical engineering discipline to the civil and industrial infrastructure of the next decade.</p>
-            </div>
-        </div>
-
-        <section class="thesisSection" id="thesis">
-            <div class="thesisGrid">
-                <div class="sectionLabel">Executive Thesis</div>
-                <div class="thesisContent">
-                    <h2>The Scaling Gap: Why Autonomy Requires Infrastructure, Not Just Algorithms</h2>
-                    <p>The current paradigm of autonomous systems is broken. We have spent a decade optimizing perception and planning in sterile environments, relying on persistent cloud connectivity and infinite compute. But the real world is contested, disconnected, and unpredictable.</p>
-                    <p>In mission critical deployments, from precision agriculture to strategic robotics, autonomy is not a product feature; it is an infrastructure challenge. The differentiator is no longer the individual node, but the <strong>Orchestration Layer</strong>.</p>
-                    <p>My work focuses on the convergence of <strong>Edge AI</strong> and <strong>Field Native Resilience</strong>. For autonomous systems to scale, we must solve for the Connectivity Gap. We must build compute architectures that enable local decision making at the point of action, paired with stacks that treat failure as a design requirement.</p>
-                    <p>This is the transition from impressive demos to deployable systems. I build the architecture that makes this possible.</p>
+            <div class="grid" id="focus">
+                <div class="tile">
+                    <h3>Edge First AI</h3>
+                    <p>Moving inference to the point of friction. Sub 100ms decisions without cloud dependency in the critical path.</p>
+                </div>
+                <div class="tile">
+                    <h3>Resilient Orchestration</h3>
+                    <p>Managing autonomous fleets where connectivity is a luxury. Architecture for degraded and contested environments.</p>
+                </div>
+                <div class="tile">
+                    <h3>Dual Use Standards</h3>
+                    <p>Applying mission critical engineering discipline to the civil and industrial infrastructure of the next decade.</p>
                 </div>
             </div>
-        </section>
 
-        <section class="thesisSection" id="insights">
-            <div class="thesisGrid">
-                <div class="sectionLabel">Strategic Writing</div>
-                <div>
-                    <a href="https://eladbloch.substack.com" target="_blank" class="insightItem">
-                        <h4>The Illusion of Cloud Connectivity in Field Robotics</h4>
-                        <p>Why relying on continuous network access is a fatal design flaw for mission critical systems.</p>
-                        <span class="readMore">Read on Substack</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/elad-bloch" target="_blank" class="insightItem">
-                        <h4>Hardware Commoditizes, Orchestration Compounds</h4>
-                        <p>The real moat in autonomous infrastructure is not the vehicle itself, but the fleet management layer.</p>
-                        <span class="readMore">Read on LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="execution">
-            <div class="container">
+            <section class="thesisSection" id="thesis">
                 <div class="thesisGrid">
-                    <div class="sectionLabel">Applied Principles</div>
+                    <div class="sectionLabel">Executive Thesis</div>
+                    <div class="thesisContent">
+                        <h2>The Scaling Gap: Why Autonomy Requires Infrastructure, Not Just Algorithms</h2>
+                        <p>The current paradigm of autonomous systems is broken. We have spent a decade optimizing perception and planning in sterile environments, relying on persistent cloud connectivity and infinite compute. But the real world is contested, disconnected, and unpredictable.</p>
+                        <p>In mission critical deployments, from precision agriculture to strategic robotics, autonomy is not a product feature; it is an infrastructure challenge. The differentiator is no longer the individual node, but the <strong>Orchestration Layer</strong>.</p>
+                        <p>My work focuses on the convergence of <strong>Edge AI</strong> and <strong>Field Native Resilience</strong>. For autonomous systems to scale, we must solve for the Connectivity Gap. We must build compute architectures that enable local decision making at the point of action, paired with stacks that treat failure as a design requirement.</p>
+                        <p>This is the transition from impressive demos to deployable systems. Those who master the orchestration of decentralized intelligence will own the global infrastructure of the next century. I build the architecture that makes this possible.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="thesisSection" id="insights">
+                <div class="thesisGrid">
+                    <div class="sectionLabel">Strategic Writing</div>
                     <div>
-                        <div class="execItem">
-                            <h4>Current Venture (Stealth)</h4>
-                            <p>Building a new edge computing and autonomy infrastructure platform for dual use environments. Focused on resolving the orchestration bottlenecks in contested operations.</p>
-                        </div>
-                        <div class="execItem">
-                            <h4>The Proving Ground</h4>
-                            <p>The thesis for edge native autonomy was forged in the field. Previous execution in agricultural technology and field robotics at Micronix proved that cloud dependency is a fatal flaw in unpredictable physical environments.</p>
+                        <a href="https://eladbloch.substack.com" target="_blank" class="insightItem">
+                            <h4>The Illusion of Cloud Connectivity in Field Robotics</h4>
+                            <p>Why relying on continuous network access is a fatal design flaw for mission critical systems.</p>
+                            <span class="readMore">Read on Substack</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elad-bloch" target="_blank" class="insightItem">
+                            <h4>Hardware Commoditizes, Orchestration Compounds</h4>
+                            <p>The real moat in autonomous infrastructure is not the vehicle itself, but the fleet management layer.</p>
+                            <span class="readMore">Read on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="execution">
+                <div class="container">
+                    <div class="thesisGrid">
+                        <div class="sectionLabel">Applied Principles</div>
+                        <div>
+                            <div class="execItem">
+                                <h4>Novincep</h4>
+                                <p>Architecting an edge computing and autonomy infrastructure platform for dual use environments. We are resolving the orchestration bottlenecks that prevent scaling in contested operations. Architecture details available on request.</p>
+                            </div>
+                            <div class="execItem">
+                                <h4>The Proving Ground: Micronix.ag</h4>
+                                <p>The thesis for edge native autonomy was forged in the field. As a B2B robotics venture focused on microgreens production, Micronix was the laboratory where we built autonomous systems for environments where cloud connectivity was non existent. This execution combined robotics, field autonomy, and early machine learning to solve real world industrial friction in the agricultural sector.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <footer>
-            <p>Ready to discuss the architecture of autonomous infrastructure?</p>
-            <a href="mailto:hello@eladbloch.com" class="contactCta">Connect via Email</a>
-            <p style="margin-top: 40px;">&copy; 2026 Elad Bloch, Systems Thinking for the Edge.</p>
+            <p>Inquiries regarding edge infrastructure and autonomous systems:</p>
+            <a href="mailto:hello@eladbloch.com" class="contactCta">Request an Architectural Briefing</a>
+            <p style="margin top: 40px;">&copy; 2026 Elad Bloch, Systems Thinking for the Edge.</p>
         </footer>
     </div>
 
